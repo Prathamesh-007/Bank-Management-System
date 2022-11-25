@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SendMoney</title>
 </head>
 <body>
 
-    <form action="/TransactionStatus" method="post">
+    <form action="/SendStatus" method="post">
         <p>
             <label for="Account Number">Enter Payee Account Number: </label>
-            <input type="text" name = "acc_no">
+            <input type="text" name = "payee">
         </p>
 
         <p>
             <label for="Amount">Enter Amount</label>
-            <input type="text" name = "amt">
+            <input type="text" name = "tranAmt">
+        </p>
+
+        <p>
+            <label for="Password">Enter Your Password: </label>
+            <input type="password" name = "tranPwd">
         </p>
 
         <p>
             <input type="submit" value = "Submit">
         </p>
 
-        <p>
-            <label for="Password">Enter Your Password: </label>
-            <input type="password" name = "password">
-            <input type="submit" value="Login">
-        </p>
     </form>
 
     <form action="BankBasedOptions">

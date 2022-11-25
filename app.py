@@ -90,7 +90,7 @@ def AccoutnDetails():
 def Transaction():
     return render_template("Transaction.html")
 
-@app.route("/TransactionStatus", methods=["post", "get"])
+@app.route("/TransactionStatus", methods = ["post", "get"])
 def TransactionStatus():
     output = request.form.to_dict()
     x = output["amt"]
@@ -100,15 +100,36 @@ def TransactionStatus():
         amt = -1*amt
     
     flag0 = SCF.Transaction(mydb, acc_no, amt)
+    val = 0
+    if flag0==True:
+        val+=1
+    else:
+        val+=2
 
-    return render_template("TransactionStatus.html", amt = amt, flag = flag0, Transaction = type0)
+    return render_template("TransactionStatus.html", amt = amt, flag = val, Transaction = type0)
 
+
+@app.route("/SendMoney", methods = ["post", "get"])
+def SendMoney():
+    return render_template("SendMoney.html")
+
+
+@app.route("/SendStatus", methods = ["post", "get"])
+def SendStatus():
+    output = request.form.to_dict()
+    pwd = output["tranPwd"]
+    tranAmt = int(output["tranAmt"])
+    payee = output["payee"]
+    val = SCF.SendMoney2(mydb, acc_no, payee, tranAmt, pwd)
+    return render_template("SendStatus.html", val = val, amt = tranAmt, payee = payee)
 
 
 if __name__ == '__main__':
-    # passwd = getpass("Enter Password to connect to database: ")
-    passwd = "shree_123"
-    mydb = SCF.connect_server("localhost", "Shambhu Kaka", passwd)
+    # Enter the password
+    passwd = str("")
+
+    #Enter the User Name
+    user = str("")
+    
+    mydb = SCF.connect_server("localhost", user, passwd)
     app.run(debug=True, port=8000)
-    # passwd = getpass("Enter Password to connect to database: ")
-    # mydb = SCF.connect_server("localhost", "Shambhu Kaka", passwd)
