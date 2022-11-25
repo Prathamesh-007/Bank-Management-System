@@ -13,16 +13,17 @@
 <hr><br>
 
 #### <b>Setting Up the Project</b>
-<p>Set up is mainly needed for the SQL database. Read the instructions given below and follow them carefully. Your project will be ready to use in no time.
-<ol>
-    <li>SQL Schema:
-    <ul style = "list-style-type">
-        <li>
-            Please refer this <a href = "">ER Diagram</a> and <a href = "">Schema</a> to create your MySQL Database.
-        </li>
-        <li>
-            Make sure you add the appropriate primary keys, foreign keys and auto increments wherever mentioned.
-        </li>
-    </ul>
-    </li>
+<p>Setting up the project is very easy. Set up is mainly needed for the SQL database.
+Go to the <b>"Set Up"</b> folder and run the <b><a href = "">"SetUp.sql"</a></b> file to create the required Database.
+
+For downloading the Python Requirements run the following commands:
+```python
+
+# for installing the flask module
+pip install flask
+
+# for installing the mysql module
+pip install mysql.connector
+
+```
 </p>

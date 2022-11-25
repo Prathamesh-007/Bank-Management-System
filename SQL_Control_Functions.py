@@ -344,3 +344,18 @@ def CheckPassword2(connection:mycon.connection.MySQLConnection ,acc_no:str, ente
     else:
         return False
 
+
+def SendMoney2(connection:mycon.connection.MySQLConnection, payer:int, payee:int, amount:int, password:str):
+    if CheckAccount(connection, payee):
+        if CheckPassword2(connection, payer, password):
+            if(Transaction(connection, payer, (-1*amount))):
+                Transaction(connection, payee, amount)
+                return "All Correct"
+            else:
+                return "Insufficient Amount"
+        else:
+            print("Wrong password!")
+            return "Wrong Password"   
+    else:
+        print(f"Payee account number Invalid!")
+        return "Invalid Payee"

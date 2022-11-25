@@ -8,11 +8,13 @@
     <title>Status</title>
 </head>
 <body>
+    
+    {% if Transaction=="Deposit" and flag==1 %}
     <h3>Your Transaction Was Successful</h3>
-    {% if Transaction==Deposit and flag==1 %}
     <h3>{{amt}} Rs Have Been deposited in Your Account</h3>
 
-    {% elif Transaction==Withdraw and flag==1 %}
+    {% elif Transaction=="Withdraw" and flag==1 %}
+    <h3>Your Transaction Was Successful</h3>
     <h3>{{amt}} Rs Have Been Withdrawn from Your Account</h3>
 
     {% elif flag==2 %}
