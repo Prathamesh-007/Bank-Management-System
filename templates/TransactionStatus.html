@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Status</title>
+</head>
+<body>
+    <h3>Your Transaction Was Successful</h3>
+    {% if Transaction==Deposit and flag==1 %}
+    <h3>{{amt}} Rs Have Been deposited in Your Account</h3>
+
+    {% elif Transaction==Withdraw and flag==1 %}
+    <h3>{{amt}} Rs Have Been Withdrawn from Your Account</h3>
+
+    {% elif flag==2 %}
+    <h3>Transaction Failed!</h3>
+
+    {% endif %}
+    
+    <h3>Please Check Your Statements for more Details</h3>
+
+    <form action="BankBasedOptions">
+        <input type="submit" value="Banking Options">
+    </form>
+
+</body>
+</html>

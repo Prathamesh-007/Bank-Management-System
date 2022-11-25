@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SendMoney</title>
+</head>
+<body>
+
+    <form action="/TransactionStatus" method="post">
+        <p>
+            <label for="Account Number">Enter Payee Account Number: </label>
+            <input type="text" name = "acc_no">
+        </p>
+
+        <p>
+            <label for="Amount">Enter Amount</label>
+            <input type="text" name = "amt">
+        </p>
+
+        <p>
+            <input type="submit" value = "Submit">
+        </p>
+
+        <p>
+            <label for="Password">Enter Your Password: </label>
+            <input type="password" name = "password">
+            <input type="submit" value="Login">
+        </p>
+    </form>
+
+    <form action="BankBasedOptions">
+        <input type="submit" value="Banking Options">
+    </form>
+    
+</body>
+</html>

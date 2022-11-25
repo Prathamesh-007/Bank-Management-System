@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Deposit</title>
+</head>
+<body>
+    <form action="/TransactionStatus" method="post">
+        <p>
+            <input type="radio" id="deposit" name = "TransactionType" value="Deposit">
+            <label for="deposit">Deposit</label>
+            <br>
+            <input type="radio" id="withdraw" name = "TransactionType" value="Withdraw">
+            <label for="withdraw">Withdraw</label><br>
+        </p>
+
+        <p>
+            <label for="Amount">Enter Amount</label>
+            <input type="text" name = "amt">
+        </p>
+        <p>
+            <input type="submit" value = "Submit">
+        </p>
+    </form>
+
+    <form action="BankBasedOptions">
+        <input type="submit" value="Banking Options">
+    </form>
+</body>
+</html>

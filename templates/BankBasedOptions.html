@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Bank Based Options</title>
+</head>
+<body>
+    {% if flag==0 %}
+    <h3>Welcome {{name}}</h3>
+    <h3>Select An Option</h3>
+    <form action="Transaction" class="form">
+        <input type="submit" value="Transaction">
+    </form>
+    <!-- <form action="Withdraw" class="form">
+        <input type="submit" value="Withdraw">
+    </form> -->
+    <form action="AccountDetails" class="form">
+        <input type="submit" value="Account Details">
+    </form>
+    <form action="SendMoney" class="form">
+        <input type="submit" value="Send Money">
+    </form>
+    <!-- <form action="AccountDetailss">
+        <input type="submit" value="Account Details">
+    </form> -->
+    <form action="Statements" class="form">
+        <input type="submit" value="Statements">
+    </form>
+    <form action="home" class="form">
+        <input type="submit" value="Home Page">
+    </form>
+
+    {% elif flag == 1 %}
+    <h2 style="color: teal; text-align:center">Account Not Found!</h2>
+
+    {% elif flag == 2 %}
+    <h2 style="color: teal; text-align:center">Password Invalid!</h2>
+
+    {% endif %}
+
+    <form action="/Login" class="form">
+        <input type="submit" value="Login Page">
+    </form>
+</body>
+</html>

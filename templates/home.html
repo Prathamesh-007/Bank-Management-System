@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    {% if cust_id %}
+    <h2>Your Customer ID is {{cust_id}}</h2>
+    {% endif %}
+    <h3>Please Select a following</h3>
+    <ul>
+        <li><u>If you have an account, <a href="/Login">click here</a></u></li>
+        <li><u>If you want to become a customer <a href="/AddCustomer">click here</a></u></li>
+        <li><u>If you want to open an account <a href="/OpenAccount">click here</a></u></li>
+    </ul>
+</body>
+</html>

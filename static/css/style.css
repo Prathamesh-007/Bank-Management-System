@@ -1,0 +1,25 @@
+.form {
+    padding: 20px;
+    /* border: 20px; */
+    color: teal;
+    
+}
+
+input {
+    color: teal;
+    background-color: aquamarine;
+    border-color: antiquewhite;
+}
+
+body{
+    background-color: #5CDB95;
+    color: #05386b;
+}
+
+th {
+    padding: 10px;
+}
+
+li {
+    color: #05386b;
+}

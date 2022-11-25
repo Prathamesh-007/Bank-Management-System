@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>OpenAccount</title>
+</head>
+<body>
+    <h2 style="color: teal; text-align: center;">Create Account!</h2>
+    <h1><a href="home">Home</a></h1>
+    <br>
+    <form action="/AccountStatus" method="post">
+        <label for="cust_id">Customer ID: </label>
+        <input type="text" name = "cust_id">
+        <br>
+
+        Account Type:
+        <p>
+            <input type="radio" id="savings" name = "AccountType" value="Savings">
+            <label for="savings">Savings</label>
+            <br>
+            <input type="radio" id="recurring" name = "AccountType" value="Recurring">
+            <label for="recurring">Recurring</label><br>
+        </p>
+
+        Branch:
+        <p>
+            <input type="radio" id="411038" name = "Branch" value="411038">
+            <label for="411038">411038</label>
+            <br>
+            <input type="radio" id="411009" name = "Branch" value="411009">
+            <label for="411009">411009</label>
+            <br>
+            <input type="radio" id="411052" name = "Branch" value="411052">
+            <label for="411052">411052</label>
+            <br>
+        </p>
+
+        <label for="Initial Deposit">Initial Deposit: </label>
+        <input type="text" name = "init_dep">
+
+        <label for="Password">Password: </label>
+        <input type="text" name = "password">
+
+        <input type="submit" value="Submit">
+
+    </form>
+    
+</body>
+</html>
