@@ -38,7 +38,7 @@ pip uninstall mysql-connector
 
 pip uninstall mysql-connector-python
 
-# to uninstall mysql connector run the following command
+# to install mysql connector run the following command
 pip install mysql-connector-python
 
 ```
