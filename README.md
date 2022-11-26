@@ -5,11 +5,14 @@
 
 ### <b>Description</b>
 <p>Welcome aboard fellow developer. You can use this repo for your college projects or to simply get some idea/framework to start your own project.</p>
-<p>The project is created using Flask module. All the important functions required for banking processes like deposit, withdrawal, transactions, creating account, getting bank details, etc. are mentioned in <a href = "https://github.com/Prathamesh-007/Python-Bank-Project/blob/master/SQL_Control_Functions.py">SQL_Control_Functions.py</a> file.</p>
+<p>The project is created using Flask module. All the important functions required for banking processes like deposit, withdrawal, transactions, creating account, getting bank details, etc. are mentioned in <a href = "https://github.com/Prathamesh-007/Python-Bank-Project/blob/master/SQL_Control_Functions.py"><b>SQL_Control_Functions.py</b></a> file.</p>
 <hr><br>
 
 #### <b>Contributing</b>
-<p>Contributions to CSS, HTML and Javascript are welcome. Suggestions for backend and adding more options to the "Banking" part are welcome</p>
+<p>Contributions to CSS, HTML and Javascript are welcome. Suggestions for backend and adding more options to the "Banking" part are welcome.
+
+For further guidelines, read the <a href = ""><b>CONTRIBUTING.md</b></a>
+</p>
 <hr><br>
 
 #### <b>Setting Up the Project</b>
@@ -23,7 +26,20 @@ For downloading the Python Requirements run the following commands:
 pip install flask
 
 # for installing the mysql module
-pip install mysql.connector
+pip install mysql-connector-python
+
+```
+
+If you are getting some errors then uninstall the python mysql connector and then reinstall it:
+```python
+
+# to uninstall mysql connector completely run the 2 following commands
+pip uninstall mysql-connector
+
+pip uninstall mysql-connector-python
+
+# to uninstall mysql connector run the following command
+pip install mysql-connector-python
 
 ```
 </p>
