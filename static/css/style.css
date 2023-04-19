@@ -1,8 +1,8 @@
+/* prathamesh css 
 .form {
     padding: 20px;
-    /* border: 20px; */
+    border: 20px;
     color: teal;
-    
 }
 
 input {
@@ -11,7 +11,7 @@ input {
     border-color: antiquewhite;
 }
 
-body{
+body {
     background-color: #5CDB95;
     color: #05386b;
 }
@@ -22,4 +22,166 @@ th {
 
 li {
     color: #05386b;
+} */
+
+
+/*login-page*/
+
+#login-page {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#login-page h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#login-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#login-page form {
+    display: grid;
+    gap: 20px;
+}
+
+#login-page label {
+    font-size: 18px;
+    color: #666;
+}
+
+#login-page input[type="text"],
+#login-page input[type="password"],
+#login-page input[type="submit"] {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    color: #666;
+}
+
+#login-page input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Home-page */
+
+body {
+    background-color: #f8f8f8;
+}
+
+.box {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.image-container img {
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+    }
+    .image-container img {
+        margin-bottom: 20px;
+    }
+}
+
+
+/*Home-Page*/
+
+#home-page {
+    margin-top: 10%;
+}
+
+#home-page .box ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#home-page .box li {
+    margin: 0 10px;
+}
+
+#home-page .box li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #382dcd;
+    text-decoration: none;
+}
+
+#home-page .box li a img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#home-page .box li a p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#home-page .box h3 {
+    color: #666;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
